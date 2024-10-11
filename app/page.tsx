@@ -7,7 +7,7 @@ import AiImageSection from "@/components/AiImageSection";
 
 export default function page() {
   return (
-    <div className="w-[1182px] mx-auto text-white text-xl flex flex-col gap-12 py-12">
+    <div className="xl:w-[1152px] lg:w-[896px] md:w-[640px] sm:w-[512px]  sm:mx-auto mx-10 text-white text-xl flex flex-col gap-16 py-12">
       <HeaderSection />
       <FantasySection />
       <RoleplaySection />

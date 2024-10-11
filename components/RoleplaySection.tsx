@@ -30,15 +30,14 @@ const RoleplaySection = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-col md:flex-row justify-between gap-6">
         {CHARACTERS.slice(4, 8).map((ch, index) => (
           <CharacterCard
             name={ch.name}
             bio={ch.bio}
             image={ch.image}
             key={index}
-            height={412}
-            width={277.5}
+            className="h-[412px]"
           />
         ))}
       </div>

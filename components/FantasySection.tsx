@@ -14,21 +14,20 @@ const FantasySection = () => {
       <div className="flex flex-col gap-3">
         <Label type="category">AI Fantasis</Label>
         <Label type="title">Live your dream experience</Label>
-        <Label type="description" className="w-[440px] text">
+        <Label type="description" className="md:w-[440px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </Label>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col items-center md:flex-row md:gap-4 gap-8">
         {STORIES.map((story, index) => (
           <CharacterCard
-            width={382}
-            height={255}
             name={story.title}
             bio={story.description}
             image={story.image}
             avatar={story.avatar}
             key={index}
+            className="h-[255px] w-full md:w-[382px]"
             buttonGroup={
               <div className="flex flex-row gap-[10px]">
                 <Button type="subscribe" onClick={() => {}}>

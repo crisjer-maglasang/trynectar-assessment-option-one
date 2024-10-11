@@ -22,13 +22,13 @@ const AiImageSection = () => {
       <div className="flex flex-col gap-3">
         <Label type="category">Generate AI Image</Label>
         <Label type="title">Beautiful erotic art in seconds.</Label>
-        <Label type="description" className="w-[440px] text">
+        <Label type="description" className="md:w-[440px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </Label>
       </div>
-      <div className="bg-gradient-to-r from-[#202024] to-[rgba(19,19,22,0)] bg-[#202024] rounded-2xl p-8 flex flex-row justify-between">
-        <div className="flex flex-col justify-between">
+      <div className="bg-gradient-to-r from-[#202024] to-[rgba(19,19,22,0)] bg-[#202024] rounded-2xl p-8 flex flex-col lg:flex-row gap-8 lg:justify-between">
+        <div className="flex flex-col gap-4 lg:justify-between">
           <div className="flex flex-col">
             {IMAGE_OPTIONS.map((option, index) => (
               <div
@@ -58,12 +58,11 @@ const AiImageSection = () => {
             </Button>
           </div>
         </div>
-        <div className="flex flex-row gap-[13px]">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-[13px] items-center">
           {filteredCharacters.map((ch, index) => (
             <CharacterCard
+              className="lg:h-[288px] lg:w-[180px]"
               key={index}
-              width={186}
-              height={288}
               image={ch.image}
             />
           ))}

@@ -2,13 +2,14 @@ import React, { FC, ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 
 interface ICharacterCard {
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
   name?: string;
   bio?: string;
   image: StaticImageData;
   avatar?: StaticImageData;
   buttonGroup?: ReactNode;
+  className?: string;
 }
 
 const CharacterCard: FC<ICharacterCard> = ({
@@ -19,12 +20,11 @@ const CharacterCard: FC<ICharacterCard> = ({
   image,
   avatar,
   buttonGroup,
+  className,
 }) => {
-  const isWidthGreater = width > height;
-
   return (
     <div
-      className={`relative rounded-2xl overflow-hidden`}
+      className={`relative rounded-2xl overflow-hidden ${className || ""}`}
       style={{ width: `${width}px`, height: `${height}px` }}
     >
       <Image
@@ -32,8 +32,8 @@ const CharacterCard: FC<ICharacterCard> = ({
         alt={name || ""}
         className="rounded-2xl"
         style={{
-          width: isWidthGreater ? "100%" : "auto",
-          height: isWidthGreater ? "auto" : "100%",
+          width: "100%",
+          height: "100%",
           objectFit: "cover",
           objectPosition: "center",
         }}
