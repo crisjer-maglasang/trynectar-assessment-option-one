@@ -25,3 +25,21 @@ export const CATEGORIES = [
   "Elf",
   "Fandom",
 ];
+
+export const IMAGE_OPTIONS = [
+  {
+    title: "seductive posture, medium breasts",
+    description: "High Resolution, Portait, Body stocking, On All Fours",
+    type: "devil",
+  },
+  {
+    title: "focus face, smiling, bunny, pink hair",
+    description: "Nectar 2.5 Model, Full HD, Portait, Bunny Custume",
+    type: "fire",
+  },
+  {
+    title: "seductive posture, medium breasts",
+    description: "Nectar 2.5 Model, Full HD, Portait, Bunny Custume",
+    type: "smile",
+  },
+];

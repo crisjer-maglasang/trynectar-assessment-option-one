@@ -4,8 +4,8 @@ import Image, { StaticImageData } from "next/image";
 interface ICharacterCard {
   width: number;
   height: number;
-  name: string;
-  bio: string;
+  name?: string;
+  bio?: string;
   image: StaticImageData;
   avatar?: StaticImageData;
   buttonGroup?: ReactNode;
@@ -29,7 +29,7 @@ const CharacterCard: FC<ICharacterCard> = ({
     >
       <Image
         src={image}
-        alt={name}
+        alt={name || ""}
         className="rounded-2xl"
         style={{
           width: isWidthGreater ? "100%" : "auto",
