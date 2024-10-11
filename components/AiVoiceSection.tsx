@@ -10,7 +10,9 @@ import {
   NoiseRightFrame,
   LeftQuote,
   RightQuote,
+  MuteIcon,
 } from "@/components/common/icons/Icon";
+import Button from "./common/Button";
 
 const AiVoiceSection = () => {
   const [selectedUserId, setSelectedUserId] = useState(1);
@@ -34,13 +36,24 @@ const AiVoiceSection = () => {
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex flex-col gap-3">
-        <Label type="category">AI Voice - Comming Soon</Label>
-        <Label type="title">Hear your Companions!</Label>
-        <Label type="description" className="w-[440px] text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt.
-        </Label>
+      <div className="flex flex-row justify-between">
+        <div className="flex flex-col gap-3">
+          <Label type="category">AI Voice - Comming Soon</Label>
+          <Label type="title">Hear your Companions!</Label>
+          <Label type="description" className="w-[440px] text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </Label>
+        </div>
+        <div className="flex justify-center items-end">
+          <Button
+            type="custome"
+            className="px-[18px] h-[37px] rounded-[31px] border border-[#2C2C30]"
+            onClick={() => {}}
+          >
+            <MuteIcon width={18} height={18} />
+          </Button>
+        </div>
       </div>
       <div
         className="h-[374px] rounded-2xl flex justify-center items-center"
