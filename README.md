@@ -1,8 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trynectar AI Test Assessment Option1
 
-## Getting Started
+## The brief introduction of the project
 
-First, run the development server:
+<p> This project is a simple single page application that allows people to generate AI images.</p>
+<p>The project contains five sections in one page: header section, fantasy section, roleplay section, AI voice section and AI image section.</p>
+
+## Project setup
+
+<p>After cloning the project, run the following command to install the dependencies:</p>
+
+```bash
+npm install
+```
+
+<p>Then, run the following command to start the development server:</p>
 
 ```bash
 npm run dev
@@ -16,21 +27,25 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<p>The project is built with Next.js and uses the following technologies:</p>
 
-## Learn More
+- Next.js
+- Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+<p>The project is organized as follows:</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app`: The project is using app routing feature of Next.js.
+- `components`: This folder contains all necessary components in where the main logic of the project is implemented.
+- `data`: This folder contains mock data for testing some interaction.
+- `hooks`: This folder contains customized hooks.
+- `types`: This folder contains definition of customized types.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<i>Note: The current version is the initial version of the project To maintain the agile methodology, initial version is shared for the review and feedback. The next step will be updating the project based on the feedback.</i>
 
-## Deploy on Vercel
+<p>Please reach me out if you find something that can be improved.</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<b>Crisjer Maglasang <br> crisjermaglasang@gmail.com <br> +639665785987 (Viber) <br> +13237233558 (WhatsApp) </br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Thank you! Look forward to your feedback. :)
