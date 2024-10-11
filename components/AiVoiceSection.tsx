@@ -12,7 +12,7 @@ import {
   RightQuote,
   MuteIcon,
 } from "@/components/common/icons/Icon";
-import Button from "./common/Button";
+import Button from "@/components/common/Button";
 
 const AiVoiceSection = () => {
   const [selectedUserId, setSelectedUserId] = useState(1);
@@ -49,7 +49,6 @@ const AiVoiceSection = () => {
           <Button
             type="custome"
             className="px-4 h-8 md:px-[18px] md:h-[37px] rounded-[31px] border border-[#2C2C30]"
-            onClick={() => {}}
           >
             <MuteIcon
               width={18}

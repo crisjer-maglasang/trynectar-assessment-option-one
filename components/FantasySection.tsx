@@ -49,12 +49,8 @@ const FantasySection = () => {
       </div>
       <div className="w-full flex justify-center items-center">
         <div className="flex gap-2">
-          <Button type="red" onClick={() => {}}>
-            Create Fantasy
-          </Button>
-          <Button type="primary" onClick={() => {}}>
-            Show More
-          </Button>
+          <Button type="red">Create Fantasy</Button>
+          <Button type="primary">Show More</Button>
         </div>
       </div>
     </div>

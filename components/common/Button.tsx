@@ -1,11 +1,12 @@
 import React, { FC, ReactNode } from "react";
 
 interface IButtonProps {
-  onClick: () => void;
+  onClick?: () => void;
   type: string;
   children: ReactNode;
   selected?: boolean;
   className?: string;
+  url?: string;
 }
 
 const Button: FC<IButtonProps> = ({
@@ -14,6 +15,7 @@ const Button: FC<IButtonProps> = ({
   children,
   selected,
   className,
+  url,
 }) => {
   const classNames: { [key: string]: string } = {
     emoji: `rounded-full flex justify-center items-center w-12 h-12 md:w-16 md:h-16 text-md md:text-2xl hover:bg-[#3B3B42] ${
@@ -29,8 +31,18 @@ const Button: FC<IButtonProps> = ({
     custome: className || "",
   };
 
+  const handleClick = () => {
+    if (url) {
+      window.location.href = url;
+    } else if (onClick) {
+      onClick();
+    } else {
+      window.location.href = "https://nectar.ai";
+    }
+  };
+
   return (
-    <button onClick={onClick} className={classNames[type]}>
+    <button onClick={handleClick} className={classNames[type]}>
       {children}
     </button>
   );

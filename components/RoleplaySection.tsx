@@ -23,7 +23,7 @@ const RoleplaySection = () => {
             onMouseDown={handleMouseDown}
           >
             {CATEGORIES.map((category, index) => (
-              <Button type="filter" key={index} onClick={() => {}}>
+              <Button type="filter" key={index}>
                 {category}
               </Button>
             ))}
@@ -43,12 +43,8 @@ const RoleplaySection = () => {
       </div>
       <div className="w-full flex justify-center items-center">
         <div className="flex gap-2">
-          <Button type="red" onClick={() => {}}>
-            Create AI Boyfriends
-          </Button>
-          <Button type="primary" onClick={() => {}}>
-            Show More
-          </Button>
+          <Button type="red">Create AI Boyfriends</Button>
+          <Button type="primary">Show More</Button>
         </div>
       </div>
     </div>
