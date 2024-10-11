@@ -14,8 +14,8 @@ import character_twelve from "@/public/images/characters/twelve.png";
 import avatar_one from "@/public/images/avatars/one.png";
 import avatar_two from "@/public/images/avatars/two.png";
 import avatar_three from "@/public/images/avatars/three.png";
-// import avatar_four from "@/public/images/avatars/four.png";
-// import avatar_five from "@/public/images/avatars/five.png";
+import avatar_four from "@/public/images/avatars/four.png";
+import avatar_five from "@/public/images/avatars/five.png";
 
 export const CHARACTERS = [
   {
@@ -120,4 +120,12 @@ export const STORIES = [
     image: character_four,
     avatar: avatar_three,
   },
+];
+
+export const USERS = [
+  { id: 1, avatar: avatar_one },
+  { id: 2, avatar: avatar_two },
+  { id: 3, avatar: avatar_three },
+  { id: 4, avatar: avatar_four },
+  { id: 5, avatar: avatar_five },
 ];
