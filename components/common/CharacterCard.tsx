@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 
 interface ICharacterCard {
@@ -8,6 +8,7 @@ interface ICharacterCard {
   bio: string;
   image: StaticImageData;
   avatar?: StaticImageData;
+  buttonGroup?: ReactNode;
 }
 
 const CharacterCard: FC<ICharacterCard> = ({
@@ -17,6 +18,7 @@ const CharacterCard: FC<ICharacterCard> = ({
   bio,
   image,
   avatar,
+  buttonGroup,
 }) => {
   const isWidthGreater = width > height;
 
@@ -49,6 +51,7 @@ const CharacterCard: FC<ICharacterCard> = ({
             {bio}
           </p>
         </div>
+        {buttonGroup}
       </div>
     </div>
   );

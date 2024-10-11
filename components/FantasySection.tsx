@@ -1,11 +1,12 @@
 "use client";
 
 import React from "react";
-import Label from "./common/Label";
-import Button from "./common/Button";
-import CharacterCard from "./common/CharacterCard";
-import character from "@/public/images/characters/one.png";
-import avatar from "@/public/images/icons/one.png";
+import Label from "@/components/common/Label";
+import Button from "@/components/common/Button";
+import CharacterCard from "@/components/common/CharacterCard";
+import { PlayOutlined, HeartOutlined } from "@/components/common/icons/Icon";
+
+import { STORIES } from "@/data/character";
 
 const FantasySection = () => {
   return (
@@ -19,28 +20,33 @@ const FantasySection = () => {
         </Label>
       </div>
       <div className="flex justify-between">
-        <CharacterCard
-          width={382}
-          height={255}
-          name="Me"
-          bio="Hello"
-          image={character}
-          avatar={avatar}
-        />
-        <CharacterCard
-          width={382}
-          height={255}
-          name="Me"
-          bio="Hello"
-          image={character}
-        />
-        <CharacterCard
-          width={382}
-          height={255}
-          name="Me"
-          bio="Hello"
-          image={character}
-        />
+        {STORIES.map((story, index) => (
+          <CharacterCard
+            width={382}
+            height={255}
+            name={story.title}
+            bio={story.description}
+            image={story.image}
+            avatar={story.avatar}
+            key={index}
+            buttonGroup={
+              <div className="flex flex-row gap-[10px]">
+                <Button type="subscribe" onClick={() => {}}>
+                  <div className="flex flex-row justify-center items-center gap-1">
+                    <PlayOutlined width={14} height={14} />
+                    {story.watched}
+                  </div>
+                </Button>
+                <Button type="subscribe" onClick={() => {}}>
+                  <div className="flex flex-row justify-center items-center gap-1">
+                    <HeartOutlined width={14} height={14} />
+                    {story.loved}
+                  </div>
+                </Button>
+              </div>
+            }
+          />
+        ))}
       </div>
       <div className="w-full flex justify-center items-center">
         <div className="flex gap-2">

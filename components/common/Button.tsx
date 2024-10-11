@@ -15,11 +15,12 @@ const Button: FC<IButtonProps> = ({ onClick, type, children, selected }) => {
     primary:
       "bg-[#2C2C30] px-[18px] h-10 flex items-center justify-center rounded-full text-sm leading-6 font-normal text-[#ECECF0]",
     red: "bg-[#F43F3F] px-[18px] h-10 flex items-center justify-center rounded-full text-sm leading-6 font-normal text-white",
+    subscribe:
+      "text-sm font-normal text-[#E2E9ED] rounded-full px-4 py-[3px] bg-[#2C2C30]",
   };
 
   return (
     <button onClick={onClick} className={classNames[type]}>
-      {/* <div className=""></div> */}
       {children}
     </button>
   );

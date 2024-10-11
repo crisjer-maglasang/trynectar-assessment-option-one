@@ -11,6 +11,12 @@ import character_ten from "@/public/images/characters/ten.png";
 import character_eleven from "@/public/images/characters/eleven.png";
 import character_twelve from "@/public/images/characters/twelve.png";
 
+import avatar_one from "@/public/images/avatars/one.png";
+import avatar_two from "@/public/images/avatars/two.png";
+import avatar_three from "@/public/images/avatars/three.png";
+// import avatar_four from "@/public/images/avatars/four.png";
+// import avatar_five from "@/public/images/avatars/five.png";
+
 export const CHARACTERS = [
   {
     name: "Mellow",
@@ -31,57 +37,87 @@ export const CHARACTERS = [
     type: "devil",
   },
   {
-    name: "Milo",
+    name: "Alex",
     bio: "He is your enemy but you guys are in the same friend. This is my test assessment and I really like this project. Yey!",
     image: character_four,
     type: "fire",
   },
   {
-    name: "Milo",
+    name: "Jordan",
     bio: "He is your enemy but you guys are in the same friend. This is my test assessment and I really like this project. Yey!",
     image: character_five,
     type: "fire",
   },
   {
-    name: "Milo",
+    name: "Taylor",
     bio: "He is your enemy but you guys are in the same friend. This is my test assessment and I really like this project. Yey!",
     image: character_six,
     type: "fire",
   },
   {
-    name: "Milo",
+    name: "Casey",
     bio: "He is your enemy but you guys are in the same friend. This is my test assessment and I really like this project. Yey!",
     image: character_seven,
     type: "smile",
   },
   {
-    name: "Milo",
+    name: "Morgan",
     bio: "He is your enemy but you guys are in the same friend. This is my test assessment and I really like this project. Yey!",
     image: character_eight,
     type: "smile",
   },
   {
-    name: "Milo",
+    name: "Riley",
     bio: "He is your enemy but you guys are in the same friend. This is my test assessment and I really like this project. Yey!",
     image: character_nine,
     type: "smile",
   },
   {
-    name: "Milo",
+    name: "Jamie",
     bio: "He is your enemy but you guys are in the same friend. This is my test assessment and I really like this project. Yey!",
     image: character_ten,
     type: "lol",
   },
   {
-    name: "Milo",
+    name: "Ryan",
     bio: "He is your enemy but you guys are in the same friend. This is my test assessment and I really like this project. Yey!",
     image: character_eleven,
     type: "lol",
   },
   {
-    name: "Milo",
+    name: "Ethan",
     bio: "He is your enemy but you guys are in the same friend. This is my test assessment and I really like this project. Yey!",
     image: character_twelve,
     type: "lol",
+  },
+];
+
+export const STORIES = [
+  {
+    title: "The Teacher Pet.",
+    description:
+      "You are a university math professor. One of your students failed her final, and is looking for some extra credit.",
+    watched: "55.5k",
+    loved: 64,
+    image: character_four,
+    avatar: avatar_one,
+  },
+  {
+    title: "Late Payment",
+    description:
+      "Jennifer is your landlord, but unfortunately with recent struggles at work. You've been missing your rent payments. She shows up at your door demanding you for money.",
+    watched: "654.5k",
+    loved: 168,
+    image: character_four,
+    avatar: avatar_two,
+  },
+  {
+    title: "Jerk Off Instructions",
+    description:
+      "Your hot roommate catches you trying to please yourself, and she's not happy about it.",
+    watched: "55.5k",
+    loved: 64,
+    image: character_four,
+    avatar: avatar_three,
   },
 ];
