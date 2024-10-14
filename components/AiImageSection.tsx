@@ -9,13 +9,12 @@ import Button from "@/components/common/Button";
 import { RightArrow } from "./common/icons/Icon";
 
 const AiImageSection = () => {
-  const [characterType, setCharacterType] = useState("devil");
   const [preferType, setPreferType] = useState("devil");
 
   const isPreferTypeSelected = (type: string) => type === preferType;
 
   const filteredCharacters = CHARACTERS.filter(
-    (character) => character.type === characterType
+    (character) => character.type === preferType
   );
   return (
     <div className="flex flex-col gap-8">
@@ -50,7 +49,7 @@ const AiImageSection = () => {
             ))}
           </div>
           <div>
-            <Button type="red" onClick={() => setCharacterType(preferType)}>
+            <Button type="red">
               <div className="flex flex-row gap-[10px] justify-center items-center">
                 <div className="font-medium">Generate Image</div>
                 <RightArrow width={16} height={16} />
