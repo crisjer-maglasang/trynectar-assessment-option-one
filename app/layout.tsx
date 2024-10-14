@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen font-mono">
+      <body className="min-h-screen font-mono bg-black">
         <SideMark />
         <div>{children}</div>
       </body>
